@@ -47,7 +47,7 @@
             <td th:text="${user.getAge()}">Age</td>
             <td th:text="${user.getEmail()}">Email</td>
             <td th:text="${user.getPassword()}">Password</td>
-            <td th:text="${user.getRoles()}">Roles</td>
+            <td th:text="${user.getRole()}">Role</td>
             <td>
                 <form th:method="DELETE" th:action="@{/{id}(id=${user.getId()})}">
                     <input type="submit" value="Удаление пользователя" class="btn btn-primary"/>
